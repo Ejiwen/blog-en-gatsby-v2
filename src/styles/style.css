@@ -1,0 +1,160 @@
+
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-content: center;
+}
+
+.sideBar {
+  position: sticky;
+  top: 0;
+  /* min-width: 250px; */
+  height: 100vh;
+}
+
+.test-two-div {
+  display: grid;
+  grid-template-columns: minmax(200px, 20%) minmax(auto, 80%) ; 
+}
+
+.footer {
+  font-size: 0.7rem;
+  /* padding: 0; */
+  text-align: center;
+}
+
+.leftSide ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  /* border: 1px solid #f70000; */
+}
+
+.leftSide ul li::before {
+  content: "✰ ";
+}
+
+.topLeftSide h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.topLeftSide p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.topLeftSide img {
+  display: block;
+  margin: auto;
+}
+
+.indexPost {
+  display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-gap: 15px;
+    min-width: 100%;
+    justify-content: space-around;
+}
+
+.indexPost h3 {
+  padding: 0;
+  margin: 0;
+}
+
+/* Mode toggle button */
+
+.styleMode {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 34px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.styleMode input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+@media only screen and (max-width: 670px) {
+  .test-two-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .sideBar {
+    position: static;
+    /*top: 0;
+     min-width: 250px;
+    height: 100vh; */
+    margin-bottom: 0;
+  }
+
+}
+
+/* --------------------------- */
+
+code {
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+

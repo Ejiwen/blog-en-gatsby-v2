@@ -1,0 +1,30 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faGithubSquare,
+  faDev,
+  faMedium,
+  faTwitterSquare,
+  faLinkedin,
+  faYoutubeSquare,
+  faCodepen,
+} from "@fortawesome/free-brands-svg-icons"
+import { Text } from "theme-ui"
+
+<div style={{ display: "flex", flexDirection: "column" }}>
+  <Text variant="contacts">
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat( auto-fit, minmax(22px, 1fr) )",
+      }}
+    >
+      <FontAwesomeIcon icon={faGithubSquare} size="lg" />
+      <FontAwesomeIcon icon={faDev} size="lg" />
+      <FontAwesomeIcon icon={faMedium} size="lg" />
+      <FontAwesomeIcon icon={faTwitterSquare} size="lg" />
+      <FontAwesomeIcon icon={faLinkedin} size="lg" />
+      {/* <FontAwesomeIcon icon={faYoutubeSquare} size="lg" /> */}
+      <FontAwesomeIcon icon={faCodepen} size="lg" />
+    </div>
+  </Text>
+</div>
