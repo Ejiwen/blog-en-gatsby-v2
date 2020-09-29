@@ -3,11 +3,14 @@ import { Text } from "theme-ui"
 import { Link } from "gatsby"
 import "../styles/style.css"
 
+
 const PostsPage = ({ postsList }) => {
+
+ 
   return (
     <div>
       <h3> RECENT WRITING </h3>
-      <div className="indexPost">
+      <div className="indexPost" id="postTitle">
         {postsList.map(post => (
           <div>
             <Text
@@ -20,7 +23,7 @@ const PostsPage = ({ postsList }) => {
             ></Text>
             <Link to={post.slug}>
               <span>{post.publishedDate}</span>
-              <h3> {post.title} </h3>
+              <h3 > {post.title} </h3>
             </Link>
           </div>
         ))}

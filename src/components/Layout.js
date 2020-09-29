@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
           <LeftSide />
         </Container>
       </Box>
-      <Box p={2} bg="background.1">
+      <Box bg="background.1">
         <label className="styleMode">
           <input
             type="checkbox"
@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
               setColorMode(colorMode === "light" ? "dark" : "light")
             }}
           />
-          <span class="slider round"></span>
+          <span className="slider round"></span>
         </label>
 
         <Container>
