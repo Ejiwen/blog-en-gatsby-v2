@@ -6,7 +6,7 @@ import "../styles/style.css"
 
 const PostsPage = ({ postsList }) => {
 
- 
+
   return (
     <div>
       <h3> RECENT WRITING </h3>
